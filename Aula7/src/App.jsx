@@ -46,7 +46,7 @@ function App() {
       <h1 className={styles.titulo}>Pokédex</h1>
           <div className={styles.listaCards}>
         {pokemons.map((pokemon) => (
-          <CardPokemon key={pokemon.id} nome={pokemon.nome} tipo={pokemon.tipo} poder={pokemon.poder} foto={pokemon.foto} />
+          <CardPokemon key={pokemon.id} nome={pokemon.nome} numero={pokemon.id} tipo={pokemon.tipo} poder={pokemon.poder} foto={pokemon.foto} />
         ))}
       </div>
     </div>

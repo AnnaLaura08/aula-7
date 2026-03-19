@@ -5,8 +5,8 @@ export function CardPokemon({ nome, foto, tipo, poder }) {
     <div className={styles.card}>
       <img src={foto} alt={nome} className={styles.foto} />
       <h2 className={styles.nome}>{nome}</h2>
-      <p className={styles.tipo}>Tipo: {tipo}</p>
-      <p className={styles.poder}>Poder: {poder}</p>
+      <p className={styles.texto}>Tipo: {tipo}</p>
+      <p className={styles.texto}>Poder: {poder}</p>
     </div>
   );
 }

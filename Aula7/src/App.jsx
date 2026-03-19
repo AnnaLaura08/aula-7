@@ -42,12 +42,14 @@ function App() {
 
   return (
     <>
+    <div className={styles.container}>
       <h1 className={styles.titulo}>Pokédex</h1>
           <div className={styles.listaCards}>
         {pokemons.map((pokemon) => (
           <CardPokemon key={pokemon.id} nome={pokemon.nome} tipo={pokemon.tipo} poder={pokemon.poder} foto={pokemon.foto} />
         ))}
       </div>
+    </div>
         </>
     
   );
